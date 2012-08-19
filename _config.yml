@@ -1,0 +1,8 @@
+auto:       on
+markdown:   rdiscount
+pygments:   true
+lsi:        true
+exclude:    ['README.markdown', 'README_FOR_COLLABORATORS.markdown', 'Gemfile.lock', 'Gemfile', 'Vagrantfile']
+paginate:   10
+
+permalink: /:year/:month/:day/:title.html

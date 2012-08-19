@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/stylesheets/screen.css?853991" type="text/css" media="screen, projection" />
+  <!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+</head>
+<body>
+  <div class="container">
+    <div id="empty-header">
+      <ul id="navMenu">
+        <li><a href="/" onclick="_gaq.push(['_trackEvent', 'header', 'home']);"><span>HOME</span></a></li>
+        <li class="selected"><span>BLOG</span></li>
+      </ul>
+    </div>
+    <div class="span-24 append-bottom testGlow">
+      <div class="round-top span-24">
+        &nbsp;
+      </div>
+      <div id="white-body" class="span-24">
+        <div class="left-side span-17">
+          {{content}}
+        </div>
+      </div>
+      <div class="round-bottom span-24">
+        &nbsp;
+      </div>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <div class="copyContent" >
+      <p class="copy">Copyright &copy; 2010. All rights reserved.</p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div id="head">
+    <div class='logo left'>
+        <a href="/" title="Home">jennybrave.github.com</a>
+    </div>
+    <div id="header">
+        <div class="nav right">
+            <a href="/home" title="home page">Home</a>
+            <a href="/blog" title="personal blog">Blog</a>
+        </div><!-- .nav -->
+    </div><!-- #header -->
+</div><!-- #head -->
+<div id="content">
+    {{ content }}
+</div><!-- #content --> 
+<div id="footer">
+    <div class="copyright right">
+        {% for line in site.copyright %}
+        <p>{{ line }}</p>
+        {% endfor %}
+    </div>
+</div><!-- #footer -->

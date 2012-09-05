@@ -4,10 +4,57 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/stylesheets/screen.css?853991" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/default.css" type="text/css" media="screen, projection" />
   <!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34529666-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </head>
 <body>
+<div id="wrapper">
+  <!-- start header -->
+  <div id="header">
+    <h1>Jenny's Blog </h1>
+    <p> some other words </p>
+  </div>
+  <!-- end header -->
+
+  <!-- start page -->
+  <div id="page">
+    <!-- start content -->
+    <div id="content">
+      {{content}}
+    </div>
+    <!-- end content -->
+    <!-- start sidebar -->
+    <div id="sidebar">
+      <ul>
+        <li>
+          <h2>Categories</h2>
+          <ul>
+            <li><a href="#">Aliquam libero</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>Archives</h2>
+          <ul>
+            <li><a href="#">September</a> (23)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- end sidebar -->
+  </div>
+  <!-- end page -->
+</div>
+
   <div class="container">
     <div id="empty-header">
       <ul id="navMenu">
@@ -15,27 +62,14 @@
         <li class="selected"><span>BLOG</span></li>
       </ul>
     </div>
-    <div class="span-24 append-bottom testGlow">
-      <div class="round-top span-24">
-        &nbsp;
-      </div>
-      <div id="white-body" class="span-24">
-        <div class="left-side span-17">
-          {{content}}
-        </div>
-      </div>
-      <div class="round-bottom span-24">
-        &nbsp;
-      </div>
-    </div>
-
   </div>
 
+  <!-- start footer -->
   <div id="footer">
-    <div class="copyContent" >
-      <p class="copy">Copyright &copy; 2010. All rights reserved.</p>
+    <p>Copyright &copy; 2012. All rights reserved.</p>
     </div>
   </div>
+  <!-- end footer -->
 
 </body>
 </html>

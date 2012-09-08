@@ -2,3 +2,15 @@
 layout: default
 title:  Jenny Wong
 ---
+
+<h1>timeline</h1>
+{% for post in site.posts limit:4 %}
+<h2>
+    <a href="{{ post.url }}" rel="bookmark" title="Permanent link to ">{{ post.title }}</a>
+</h2>
+<span>{{ post.date | date: '%Y-%m-%d' }}</span>
+<p>
+    {{ post.excerpt }}
+</p>
+{% endfor %}
+
